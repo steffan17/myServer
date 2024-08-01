@@ -8,8 +8,9 @@ const base = {
         return db.prepare('SELECT name FROM sqlite_schema').all()
     },
 
-    getTable: ()=>{
-        return db.prepare(`SELECT * FROM testTableToys`).all()
+    getTable: (tableName)=>{
+        console.log(tableName)
+        return db.prepare(`SELECT * FROM ${tableName}`).all()
     },
 
         dev: {

@@ -3,7 +3,7 @@ const db = require(`../db/db.js`)
 const api = {
 
 getTables: (req, res) => {res.send(db.getTables())},
-getTable: (req, res) => {res.send(db.getTable())},
+getTable: (req, res) => {res.send(db.getTable(req.query.tableName))},
 
 
 
