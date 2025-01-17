@@ -13,6 +13,11 @@ const base = {
         return db.prepare(`SELECT * FROM ${tableName}`).all()
     },
 
+    deleteRow: (id, tableName)=>{
+        console.log(`id: ${id}, tabela: ${tableName}`)
+        return `Usunięto id: ${id} z tabeli: ${tableName}`
+    },
+
         dev: {
             //funkcje robocze
             testFunc: ()=>{

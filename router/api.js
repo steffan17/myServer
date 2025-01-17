@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.get('/api/getTables', api.getTables)
 router.get('/api/getTable', api.getTable)
+router.get('/api/deleteRow',api.deleteRow)
 
 //dev
 router.get('/api/', (req, res)=>{res.send('api :-)')})

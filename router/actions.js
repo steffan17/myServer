@@ -4,7 +4,7 @@ const api = {
 
 getTables: (req, res) => {res.send(db.getTables())},
 getTable: (req, res) => {res.send(db.getTable(req.query.tableName))},
-
+deleteRow: (req, res) =>{res.send(db.deleteRow(req.query.id, req.query.tableName))},
 
 
 testFunction: (req, res) => {res.send(`api testFunction`)},
